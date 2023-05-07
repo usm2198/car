@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
     res.send('This is default route')
 })
 
-// app.use('/api/movie', movieRoute)
+ app.use('/api/movie', movieRoute)
 app.use('/api/car', carRoute)
 
 async function main() {
