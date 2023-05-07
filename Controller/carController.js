@@ -20,7 +20,7 @@ exports.postcar = async (req, res)=>{
 
 exports.putcar = async (req, res)=>{
     try {
-        const data = await car.findByIdAndUpdate(req.params.id, req.params, {new: true})
+        const data = await car.findByIdAndUpdate(req.params.id, req.body, {new: true})
         return res.json({errors: false, data: data})
     } catch (error) {
         return res.status(400).json({errors: true, message: error.message})
