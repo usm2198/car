@@ -1,4 +1,4 @@
-// const movieRoute = require('./Route/movieRoute')
+ const movieRoute = require('./Route/movieRoute')
 const carRoute = require('./Route/carRoute')
 const express = require('express');
 const mongoose = require('mongoose');
