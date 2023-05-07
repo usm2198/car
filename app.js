@@ -2,6 +2,7 @@
 const carRoute = require('./Route/carRoute')
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 require('dotenv/config')
 
@@ -9,6 +10,7 @@ const app = express();
 
 // Middleare 
 app.use(express.json());
+app.use(cors());
 
 // By default Route 
 app.get('/', (req, res)=>{
